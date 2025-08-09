@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Log In - OpsByteAI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">OpsByteAI</div>
+    <nav>
+        <div class="menu-toggle">☰</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="features.html">Features</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html" class="active">Log In</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </nav>
+</header>
 
+<section>
+    <h1>Log In</h1>
+    <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn">Log In</button>
+    </form>
+
+    <div id="g_id_onload"
+        data-client_id="963634215234-hbpjdv00ouvfh1v3egmpavtc326r3l6u.apps.googleusercontent.com"
+        data-login_uri="https://your-vercel-domain.vercel.app"
+        data-auto_prompt="false">
+    </div>
+
+    <div class="g_id_signin" data-type="standard"></div>
+</section>
+
+<footer>
+    <p>&copy; 2025 OpsByteAI</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

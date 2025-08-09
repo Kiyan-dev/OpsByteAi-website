@@ -5,176 +5,148 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OpsByteAi</title>
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #0a0a0a;
-        color: white;
-    }
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        background-color: #0d0d0d;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-    }
-    .logo {
-        font-size: 1.5rem;
-        color: #00ff88;
-        font-weight: bold;
-    }
-    .menu-toggle {
-        font-size: 1.8rem;
-        color: white;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-    nav {
-        position: fixed;
-        top: 0;
-        right: -250px;
-        width: 250px;
-        height: 100%;
-        background-color: #111;
-        transition: right 0.3s ease;
-        padding-top: 60px;
-    }
-    nav a {
-        display: block;
-        color: white;
-        padding: 1rem;
-        text-decoration: none;
-        border-bottom: 1px solid #222;
-    }
-    nav a:hover {
-        background-color: #00ff88;
-        color: black;
-    }
-    .nav-open {
-        right: 0;
-    }
-    .hero {
-        padding-top: 100px;
-        text-align: center;
-        padding: 2rem;
-    }
-    .hero h1 {
-        font-size: 2.5rem;
-        color: #00ff88;
-    }
-    .buttons {
-        margin-top: 1.5rem;
-    }
-    .buttons a {
-        background-color: #00ff88;
-        color: black;
-        padding: 0.8rem 1.5rem;
-        margin: 0.5rem;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-    }
-    .features {
-        max-width: 800px;
-        margin: auto;
-        padding: 2rem;
-    }
-    .feature {
-        border-bottom: 1px solid #333;
-        padding: 1rem 0;
-        cursor: pointer;
-    }
-    .feature h3 {
-        margin: 0;
-        color: #00ff88;
-    }
-    .feature p {
-        display: none;
-        margin-top: 0.5rem;
-    }
-    .feature.open p {
-        display: block;
-    }
-    footer {
-        background-color: #0d0d0d;
-        padding: 1rem;
-        text-align: center;
-        font-size: 0.9rem;
-        margin-top: 2rem;
-    }
-    footer a {
-        color: #00ff88;
-        margin: 0 0.5rem;
-        text-decoration: none;
-    }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+header {
+    background-color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00ff99;
+}
+nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background: #111;
+    width: 200px;
+    border: 1px solid #00ff99;
+}
+nav a {
+    color: #00ff99;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #00ff99;
+    color: #000;
+}
+.menu-icon {
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #00ff99;
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.hero button {
+    margin: 10px;
+    padding: 15px 25px;
+    background-color: #00ff99;
+    color: #000;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+.features {
+    padding: 20px;
+}
+.feature {
+    margin-bottom: 15px;
+    border: 1px solid #00ff99;
+    padding: 10px;
+    cursor: pointer;
+}
+.feature p {
+    display: none;
+    margin-top: 10px;
+    color: #ccc;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 40px;
+}
+footer a {
+    color: #00ff99;
+    margin: 0 10px;
+    text-decoration: none;
+}
 </style>
 </head>
 <body>
-
 <header>
     <div class="logo">OpsByteAi</div>
-    <button class="menu-toggle">&#9776;</button>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="features.html">Features</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </nav>
 </header>
-
-<nav id="sideMenu">
-    <a href="signup.html">Sign Up</a>
-    <a href="login.html">Log In</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="#features">Features</a>
-    <a href="faq.html">FAQ</a>
-    <a href="about.html">About Us</a>
-</nav>
 
 <section class="hero">
     <h1>Welcome to OpsByteAi</h1>
-    <p>Your next-generation AI assistant for apps, automation, and more.</p>
-    <div class="buttons">
-        <a href="pricing.html">Get Started</a>
-        <a href="signup.html">Demo</a>
-    </div>
+    <button onclick="location.href='pricing.html'">Get Started</button>
+    <button onclick="location.href='signup.html'">Demo</button>
 </section>
 
-<section class="features" id="features">
-    <div class="feature">
-        <h3>Powerful Automation</h3>
-        <p>Automate tasks with our AI-driven workflow engine that adapts to your needs.</p>
+<section class="features">
+    <div class="feature" onclick="toggleFeature(this)">
+        Powerful Feature 1
+        <p>Detailed description of Powerful Feature 1.</p>
     </div>
-    <div class="feature">
-        <h3>Seamless Integration</h3>
-        <p>Connect effortlessly with the apps you already use every day.</p>
+    <div class="feature" onclick="toggleFeature(this)">
+        Powerful Feature 2
+        <p>Detailed description of Powerful Feature 2.</p>
     </div>
-    <div class="feature">
-        <h3>Advanced Analytics</h3>
-        <p>Gain valuable insights with AI-powered analytics tools.</p>
+    <div class="feature" onclick="toggleFeature(this)">
+        Powerful Feature 3
+        <p>Detailed description of Powerful Feature 3.</p>
     </div>
 </section>
 
 <footer>
-    <a href="about.html">About Us</a> | 
-    <a href="faq.html">FAQ</a> | 
-    <a href="contact.html">Contact</a>
+    <a href="about.html">About Us</a>
+    <a href="faq.html">FAQ</a>
+    <a href="pricing.html">Pricing</a>
 </footer>
 
 <script>
-    // Mobile menu
-    const menuToggle = document.querySelector('.menu-toggle');
-    const sideMenu = document.getElementById('sideMenu');
-    menuToggle.addEventListener('click', () => {
-        sideMenu.classList.toggle('nav-open');
-    });
-
-    // Features expand/collapse
-    document.querySelectorAll('.feature').forEach(feature => {
-        feature.addEventListener('click', () => {
-            feature.classList.toggle('open');
-        });
-    });
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+}
+function toggleFeature(element) {
+    const p = element.querySelector('p');
+    p.style.display = p.style.display === 'block' ? 'none' : 'block';
+}
 </script>
-
 </body>
 </html>

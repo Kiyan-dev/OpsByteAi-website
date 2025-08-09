@@ -1,22 +1,44 @@
-/* Mobile Menu Overlay Style */
-.nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    background: black;
-    padding: 10px;
-    z-index: 1000;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
 }
 
-.nav-links.active {
+.navbar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    position: relative;
 }
 
-.menu-toggle {
-    font-size: 24px;
-    cursor: pointer;
+.nav-links a {
+    text-decoration: none;
     color: green;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-links a:hover {
+    background-color: rgba(0, 255, 0, 0.1);
+    border-radius: 5px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+    .nav-links {
+        display: flex !important;
+        position: static;
+        background: none;
+        flex-direction: row;
+    }
 }

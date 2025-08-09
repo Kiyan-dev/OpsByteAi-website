@@ -1,75 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpsByteAI - Pricing</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing - OpsByteAi</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-    <div class="logo">OpsByteAI</div>
-    <nav>
-        <div class="menu-toggle">☰</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="features.html">Features</a>
-            <a href="faq.html">FAQ</a>
-            <a href="about.html">About Us</a>
-            <a href="login.html">Log In</a>
-            <a href="signup.html">Sign Up</a>
-        </div>
+    <div class="logo">OpsByteAi</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="features.html">Features</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
     </nav>
 </header>
-
-<section>
-    <h1>Choose Your Plan</h1>
-    <div class="pricing-container">
-        <div class="pricing-card">
-            <h3>Basic</h3>
-            <p>$9.99 / month</p>
-            <p>7-day free trial</p>
-            <ul>
-                <li>3 Apps</li>
-                <li>1 Messenger</li>
-                <li>50 Users</li>
-                <li>1 AI Agent</li>
-            </ul>
-            <a href="signup.html" class="btn">Select</a>
+<main>
+    <section style="padding:20px; text-align:center;">
+        <h1>Our Plans</h1>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+            <div class="plan">
+                <h2>Basic</h2>
+                <p>$9.99/month</p>
+                <p>7-day free trial</p>
+                <button>Choose Plan</button>
+            </div>
+            <div class="plan">
+                <h2>Advanced</h2>
+                <p>$24.99/month</p>
+                <p>7-day free trial</p>
+                <button>Choose Plan</button>
+            </div>
+            <div class="plan">
+                <h2>Pro</h2>
+                <p>$54.99/month</p>
+                <p>14-day free trial</p>
+                <button>Choose Plan</button>
+            </div>
         </div>
-
-        <div class="pricing-card">
-            <h3>Advanced</h3>
-            <p>$24.99 / month</p>
-            <p>7-day free trial</p>
-            <ul>
-                <li>10 Apps</li>
-                <li>3 Messengers</li>
-                <li>200 Users</li>
-                <li>3 AI Agents</li>
-            </ul>
-            <a href="signup.html" class="btn">Select</a>
-        </div>
-
-        <div class="pricing-card">
-            <h3>Pro</h3>
-            <p>$54.99 / month</p>
-            <p>14-day free trial</p>
-            <ul>
-                <li>Unlimited Apps</li>
-                <li>Unlimited Messengers</li>
-                <li>Unlimited Users</li>
-                <li>10 AI Agents</li>
-            </ul>
-            <a href="signup.html" class="btn">Select</a>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2025 OpsByteAI</p>
-</footer>
+    </section>
+</main>
 <script src="script.js"></script>
 </body>
 </html>

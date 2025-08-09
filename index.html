@@ -4,15 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpsByte</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: black;
+            width: 100%;
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: green;
+            padding: 10px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+        }
+        .nav-links a:hover {
+            background-color: rgba(0, 255, 0, 0.1);
+            border-radius: 5px;
+        }
+        .logo a {
+            text-decoration: none;
+            color: green;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu-toggle {
+            font-size: 28px;
+            color: green;
+            cursor: pointer;
+        }
+        @media (min-width: 768px) {
+            .menu-toggle {
+                display: none;
+            }
+            .nav-links {
+                display: flex !important;
+                position: static;
+                background: none;
+                flex-direction: row;
+                box-shadow: none;
+                width: auto;
+                padding: 0;
+            }
+            .nav-links a {
+                padding: 10px 15px;
+            }
+        }
+        main {
+            padding: 80px 20px 20px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html" style="color: green; font-size: 24px; font-weight: bold;">OpsByte</a>
+            <a href="index.html">OpsByte</a>
         </div>
         <div class="menu-toggle">☰</div>
         <div class="nav-links">
@@ -26,3 +97,20 @@
         </div>
     </nav>
 </header>
+
+<main>
+    <h1>Welcome to OpsByte</h1>
+    <p>Your AI-powered automation solution.</p>
+</main>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    });
+</script>
+
+</body>
+</html>

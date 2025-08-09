@@ -1,114 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpsByte</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #000;
-            color: #fff;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: black;
-            padding: 10px 20px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            background-color: black;
-            width: 100%;
-            padding: 20px 0;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: green;
-            padding: 10px;
-            font-weight: bold;
-            display: block;
-            text-align: center;
-        }
-        .nav-links a:hover {
-            background-color: rgba(0, 255, 0, 0.1);
-            border-radius: 5px;
-        }
-        .logo a {
-            text-decoration: none;
-            color: green;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .menu-toggle {
-            font-size: 28px;
-            color: green;
-            cursor: pointer;
-        }
-        @media (min-width: 768px) {
-            .menu-toggle {
-                display: none;
-            }
-            .nav-links {
-                display: flex !important;
-                position: static;
-                background: none;
-                flex-direction: row;
-                box-shadow: none;
-                width: auto;
-                padding: 0;
-            }
-            .nav-links a {
-                padding: 10px 15px;
-            }
-        }
-        main {
-            padding: 80px 20px 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpsByteAi</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0a0a0a;
+        color: white;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #0d0d0d;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    .logo {
+        font-size: 1.5rem;
+        color: #00ff88;
+        font-weight: bold;
+    }
+    .menu-toggle {
+        font-size: 1.8rem;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: #111;
+        transition: right 0.3s ease;
+        padding-top: 60px;
+    }
+    nav a {
+        display: block;
+        color: white;
+        padding: 1rem;
+        text-decoration: none;
+        border-bottom: 1px solid #222;
+    }
+    nav a:hover {
+        background-color: #00ff88;
+        color: black;
+    }
+    .nav-open {
+        right: 0;
+    }
+    .hero {
+        padding-top: 100px;
+        text-align: center;
+        padding: 2rem;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+        color: #00ff88;
+    }
+    .buttons {
+        margin-top: 1.5rem;
+    }
+    .buttons a {
+        background-color: #00ff88;
+        color: black;
+        padding: 0.8rem 1.5rem;
+        margin: 0.5rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .features {
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+    }
+    .feature {
+        border-bottom: 1px solid #333;
+        padding: 1rem 0;
+        cursor: pointer;
+    }
+    .feature h3 {
+        margin: 0;
+        color: #00ff88;
+    }
+    .feature p {
+        display: none;
+        margin-top: 0.5rem;
+    }
+    .feature.open p {
+        display: block;
+    }
+    footer {
+        background-color: #0d0d0d;
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+    footer a {
+        color: #00ff88;
+        margin: 0 0.5rem;
+        text-decoration: none;
+    }
+</style>
 </head>
 <body>
 
 <header>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">OpsByte</a>
-        </div>
-        <div class="menu-toggle">☰</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="features.html">Features</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="faq.html">FAQ</a>
-            <a href="about.html">About Us</a>
-            <a href="login.html">Log In</a>
-            <a href="signup.html">Sign Up</a>
-        </div>
-    </nav>
+    <div class="logo">OpsByteAi</div>
+    <button class="menu-toggle">&#9776;</button>
 </header>
 
-<main>
-    <h1>Welcome to OpsByte</h1>
-    <p>Your AI-powered automation solution.</p>
-</main>
+<nav id="sideMenu">
+    <a href="signup.html">Sign Up</a>
+    <a href="login.html">Log In</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="#features">Features</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About Us</a>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to OpsByteAi</h1>
+    <p>Your next-generation AI assistant for apps, automation, and more.</p>
+    <div class="buttons">
+        <a href="pricing.html">Get Started</a>
+        <a href="signup.html">Demo</a>
+    </div>
+</section>
+
+<section class="features" id="features">
+    <div class="feature">
+        <h3>Powerful Automation</h3>
+        <p>Automate tasks with our AI-driven workflow engine that adapts to your needs.</p>
+    </div>
+    <div class="feature">
+        <h3>Seamless Integration</h3>
+        <p>Connect effortlessly with the apps you already use every day.</p>
+    </div>
+    <div class="feature">
+        <h3>Advanced Analytics</h3>
+        <p>Gain valuable insights with AI-powered analytics tools.</p>
+    </div>
+</section>
+
+<footer>
+    <a href="about.html">About Us</a> | 
+    <a href="faq.html">FAQ</a> | 
+    <a href="contact.html">Contact</a>
+</footer>
 
 <script>
+    // Mobile menu
     const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
+    const sideMenu = document.getElementById('sideMenu');
     menuToggle.addEventListener('click', () => {
-        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        sideMenu.classList.toggle('nav-open');
+    });
+
+    // Features expand/collapse
+    document.querySelectorAll('.feature').forEach(feature => {
+        feature.addEventListener('click', () => {
+            feature.classList.toggle('open');
+        });
     });
 </script>
 

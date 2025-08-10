@@ -1,44 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+}
 
-    // Mobile Menu Toggle
-    if (menuToggle && navLinks) {
-        menuToggle.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
-        });
+function toggleFeature(element) {
+    const p = element.querySelector('p');
+    p.style.display = p.style.display === 'block' ? 'none' : 'block';
+}
+
+// Subscription check placeholder
+function checkSubscription(user) {
+    const now = new Date();
+    if (user.subscriptionEnd && now > new Date(user.subscriptionEnd)) {
+        alert("Your subscription has expired. Please renew to continue.");
+        // Redirect to pricing
+        window.location.href = 'pricing.html';
     }
-
-    // Close menu when clicking a link (mobile fix)
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", () => {
-            navLinks.classList.remove("active");
-        });
-    });
-
-    // LOGIN STATE MANAGEMENT
-    const loginLink = document.querySelector('a[href="login.html"]');
-    const signupLink = document.querySelector('a[href="signup.html"]');
-
-    function updateNav() {
-        const user = localStorage.getItem("loggedInUser");
-        if (user) {
-            if (loginLink) loginLink.textContent = "Dashboard";
-            if (signupLink) signupLink.style.display = "none";
-        } else {
-            if (loginLink) loginLink.textContent = "Log In";
-            if (signupLink) signupLink.style.display = "inline-block";
-        }
-    }
-    updateNav();
-
-    // Fake Login Example (Replace with real auth later)
-    const loginForm = document.querySelector("form");
-    if (loginForm) {
-        loginForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-            localStorage.setItem("loggedInUser", "true");
-            window.location.href = "index.html";
-        });
-    }
-});
+}

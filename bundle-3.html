@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>3-Month Bundles</title>
-<link rel="stylesheet" href="style.css"/><script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3 Month Bundle - OpsByteAI</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-  <div class="logo">OpsByteAi</div>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-</header>
-<nav id="offcanvas-menu" class="offcanvas">
-  <a href="index.html">Home</a> <a href="pricing.html">Pricing</a> <a href="bundle-3.html">Bundles (3mo)</a>
-  <a href="bundle-6.html">Bundles (6mo)</a> <a href="bundle-12.html">Bundles (1yr)</a>
-  <a href="login.html">Log in</a>
+<nav>
+  <div class="logo">OpsByteAI</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bundles.html" class="active">Bundles</a></li>
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
 </nav>
 
-<main class="main">
-  <section class="pricing-section">
-    <h1 style="text-align:center;color:var(--accent)">3-Month Bundles — 5% off</h1>
-    <div class="pricing-grid">
-      <div class="plan">
-        <div><h3>Starter — 3 months</h3><p class="price">€8.09 / month (billed 3 months)</p><ul><li>All Starter features</li></ul></div>
-        <div><button onclick="buyPlan('starter',3)" class="btn">Buy 3 months</button></div>
-      </div>
+<header class="hero">
+  <h1>3 Month Bundle - 10% Off</h1>
+</header>
 
-      <div class="plan">
-        <div><h3>Advanced — 3 months</h3><p class="price">€23.74 / month (billed 3 months)</p></div>
-        <div><button onclick="buyPlan('advanced',3)" class="btn">Buy 3 months</button></div>
-      </div>
+<section class="plans">
+  <div class="plan-card">
+    <h2>Basic</h2>
+    <p>$22.49/month</p>
+    <p>Apps: 5 | Agents: 1 | Messages: 500</p>
+    <a href="#" class="btn">Buy Now</a>
+  </div>
+  <div class="plan-card">
+    <h2>Advanced</h2>
+    <p>$22.49/month</p>
+    <p>Apps: 15 | Agents: 3 | Messages: 1500</p>
+    <a href="#" class="btn">Buy Now</a>
+  </div>
+  <div class="plan-card">
+    <h2>Pro</h2>
+    <p>$49.49/month</p>
+    <p>Apps: Unlimited | Agents: 10 | Messages: Unlimited</p>
+    <a href="#" class="btn">Buy Now</a>
+  </div>
+</section>
 
-      <div class="plan">
-        <div><h3>Pro — 3 months</h3><p class="price">€52.24 / month (billed 3 months)</p></div>
-        <div><button onclick="buyPlan('pro',3)" class="btn">Buy 3 months</button></div>
-      </div>
-    </div>
-  </section>
-</main>
+<script src="script.js"></script>
 </body>
 </html>

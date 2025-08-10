@@ -3,43 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bundles - OpsByteAi</title>
+<title>Bundles - OpsByteAI</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
 </head>
 <body>
-<header>
-    <div class="logo">OpsByteAi</div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav id="menu">
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="bundle.html" class="active">Bundles</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About Us</a>
-        <a href="login.html">Login</a>
-        <a href="signup.html">Sign Up</a>
-    </nav>
-</header>
+  <nav>
+    <div class="logo">OpsByteAI</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="bundles.html" class="active">Bundles</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="login.html">Log In</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
 
-<section class="pricing-section">
-    <h1>Bundle Deals</h1>
-    <div class="pricing-card">
-        <h2>3 Months (10% Off)</h2>
-        <p>Choose your plan and enjoy 10% off for 3 months.</p>
-        <button>View 3 Month Plans</button>
+  <header class="hero">
+    <h1>Special Bundles</h1>
+    <p>Save big with multi-month subscriptions.</p>
+  </header>
+
+  <section class="plans">
+    <div class="plan-card">
+      <h2>3 Months</h2>
+      <p>10% off</p>
+      <a href="bundle-3month.html" class="btn">View Bundle</a>
     </div>
-    <div class="pricing-card">
-        <h2>6 Months (15% Off)</h2>
-        <p>Choose your plan and enjoy 15% off for 6 months.</p>
-        <button>View 6 Month Plans</button>
+    <div class="plan-card">
+      <h2>6 Months</h2>
+      <p>15% off</p>
+      <a href="bundle-6month.html" class="btn">View Bundle</a>
     </div>
-    <div class="pricing-card">
-        <h2>1 Year (20% Off)</h2>
-        <p>Choose your plan and enjoy 20% off for a full year.</p>
-        <button>View 12 Month Plans</button>
+    <div class="plan-card">
+      <h2>1 Year</h2>
+      <p>20% off</p>
+      <a href="bundle-1year.html" class="btn">View Bundle</a>
     </div>
-</section>
+  </section>
+
+<script src="script.js"></script>
 </body>
 </html>

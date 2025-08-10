@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Login - OpsByteAi</title>
-<link rel="stylesheet" href="style.css"/>
-<script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
-<script src="https://accounts.google.com/gsi/client" async defer></script>
-<script src="script.js" defer></script>
-</head>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Login — OpsByteAi</title><link rel="stylesheet" href="style.css"/><script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script><script src="https://accounts.google.com/gsi/client" async defer></script><script src="script.js" defer></script></head>
 <body>
 <header class="header"><div class="logo">OpsByteAi</div><button class="menu-toggle" onclick="toggleMenu()">☰</button></header>
-<nav id="offcanvas-menu" class="offcanvas">
-  <a href="index.html">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="signup.html">Sign Up</a>
-</nav>
+<nav id="offcanvas-menu" class="offcanvas"><a href="index.html">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="signup.html">Sign Up</a></nav>
 
 <main class="main">
   <section class="auth-wrap">
@@ -23,11 +14,10 @@
         <input name="password" type="password" placeholder="Password" required>
         <button type="submit">Login</button>
       </form>
-      <div style="margin-top:10px; text-align:center">or</div>
+      <div style="margin-top:10px;text-align:center">or</div>
       <div id="g_id_onload"
            data-client_id="963634215234-hbpjdv00ouvfh1v3egmpavtc326r3l6u.apps.googleusercontent.com"
-           data-callback="handleCredentialResponse">
-      </div>
+           data-callback="handleCredentialResponse"></div>
       <div class="g_id_signin" data-type="standard"></div>
     </div>
   </section>
@@ -35,8 +25,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', ()=>{
-  const f = document.getElementById('loginForm');
-  if(f) attachLogin(f);
+  const f = document.getElementById('loginForm'); if(f) attachLogin(f);
 });
 </script>
 </body>

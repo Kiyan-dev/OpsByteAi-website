@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpsByteAI - Features</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 <header>
-    <div class="logo">OpsByteAI</div>
-    <nav>
-        <div class="menu-toggle">☰</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="features.html">Features</a>
-            <a href="faq.html">FAQ</a>
-            <a href="about.html">About Us</a>
-            <a href="login.html">Log In</a>
-            <a href="signup.html">Sign Up</a>
-        </div>
-    </nav>
+  <div class="logo">OpsByteAi</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <nav id="menu">
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About Us</a>
+    <a href="login.html">Log In</a>
+    <a href="signup.html">Sign Up</a>
+  </nav>
 </header>
 
-<section>
-    <h1>Our Powerful Features</h1>
-    <div class="feature">
-        AI Chatbots
-        <div class="feature-content">Engage with customers 24/7 using intelligent chatbots that learn over time.</div>
-    </div>
-    <div class="feature">
-        Workflow Automation
-        <div class="feature-content">Automate repetitive processes and save hours of manual work weekly.</div>
-    </div>
-    <div class="feature">
-        Data Insights
-        <div class="feature-content">Advanced analytics to make smarter business decisions.</div>
-    </div>
-    <div class="feature">
-        Multi-Platform Support
-        <div class="feature-content">Integrate across multiple messengers, apps, and websites effortlessly.</div>
-    </div>
+<section class="features-page">
+  <h1>Our Features</h1>
+  <div class="feature" onclick="toggleFeature(this)">
+    <h3>AI Chatbots</h3>
+    <p class="hidden">Automate responses and assist users 24/7.</p>
+  </div>
+  <div class="feature" onclick="toggleFeature(this)">
+    <h3>Custom Integrations</h3>
+    <p class="hidden">Connect with your favorite tools and platforms.</p>
+  </div>
+  <div class="feature" onclick="toggleFeature(this)">
+    <h3>Real-time Analytics</h3>
+    <p class="hidden">Track performance and get actionable insights.</p>
+  </div>
 </section>
 
 <footer>
-    <p>&copy; 2025 OpsByteAI</p>
+  <div class="footer-links">
+    <a href="about.html">About Us</a>
+    <a href="faq.html">FAQ</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Pricing</a>
+  </div>
+  <p>© 2025 OpsByteAi. All rights reserved.</p>
 </footer>
-<script src="script.js"></script>
 </body>
 </html>

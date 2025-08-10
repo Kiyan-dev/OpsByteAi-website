@@ -1,103 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>OpsByteAi — Pricing</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="script.js" defer></script>
-</head>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Pricing — OpsByteAi</title><link rel="stylesheet" href="style.css"/><script src="script.js" defer></script></head>
 <body>
-<header class="header">
-  <div class="logo">OpsByteAi</div>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-</header>
-<nav id="offcanvas-menu" class="offcanvas">
-  <a href="index.html">Home</a>
-  <a href="features.html">Features</a>
-  <a href="pricing.html">Pricing</a>
-  <a href="bundle-3.html">Bundles (3mo)</a>
-  <a href="bundle-6.html">Bundles (6mo)</a>
-  <a href="bundle-12.html">Bundles (1yr)</a>
-  <a href="faq.html">FAQ</a>
-  <a href="about.html">About</a>
-  <a href="login.html">Log In</a>
-  <a href="signup.html">Sign Up</a>
-</nav>
+<header class="header"><div class="logo">OpsByteAi</div><button class="menu-toggle" onclick="toggleMenu()">☰</button></header>
+<nav id="offcanvas-menu" class="offcanvas"><a href="index.html">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="bundles.html">Bundles</a><a href="faq.html">FAQ</a><a href="about.html">About</a><a href="login.html">Log in</a><a href="signup.html">Sign up</a></nav>
 
 <main class="main">
   <section class="section pricing">
     <h1 style="text-align:center;color:var(--accent)">Plans</h1>
-
     <div class="pricing-grid">
-      <div class="plan">
-        <div>
-          <h3>Starter</h3>
-          <div class="price">€8.99 / month</div>
-          <ul>
-            <li>5 Apps</li>
-            <li>3 Messenger Channels</li>
-            <li>10 Users/group</li>
-            <li>1 AI Agent</li>
-            <li>Email support</li>
-            <li>7-day free trial</li>
-          </ul>
-        </div>
-        <div>
-          <button class="btn" onclick="buyPlan('starter',1)">Buy month</button>
-          <div style="margin-top:10px">
-            <a class="btn secondary" href="bundle-3.html">3mo (5% off)</a>
-            <a class="btn secondary" href="bundle-6.html">6mo (10% off)</a>
-            <a class="btn secondary" href="bundle-12.html">12mo (20% off)</a>
-          </div>
-        </div>
-      </div>
+      <div class="plan"><div><h3>Starter</h3><div class="price">€8.99 / month</div><ul><li>5 Apps</li><li>3 Messengers</li><li>10 People/group</li><li>1 AI Agent</li><li>Email Support</li><li>7-day trial</li></ul></div><div><button class="btn" onclick="buyPlan('starter',1)">Buy month</button><div style="margin-top:10px"><a class="btn secondary" href="bundle-3.html">3mo (5% off)</a> <a class="btn secondary" href="bundle-6.html">6mo (10% off)</a></div></div></div>
 
-      <div class="plan">
-        <div>
-          <h3>Advanced</h3>
-          <div class="price">€24.99 / month</div>
-          <ul>
-            <li>15 Apps</li>
-            <li>5 Messenger Channels</li>
-            <li>50 Users/group</li>
-            <li>3 AI Agents</li>
-            <li>Priority support</li>
-            <li>7-day free trial</li>
-          </ul>
-        </div>
-        <div>
-          <button class="btn" onclick="buyPlan('advanced',1)">Buy month</button>
-          <div style="margin-top:10px">
-            <a class="btn secondary" href="bundle-3.html">3mo (5% off)</a>
-            <a class="btn secondary" href="bundle-6.html">6mo (10% off)</a>
-            <a class="btn secondary" href="bundle-12.html">12mo (20% off)</a>
-          </div>
-        </div>
-      </div>
+      <div class="plan"><div><h3>Advanced</h3><div class="price">€24.99 / month</div><ul><li>15 Apps</li><li>5 Messengers</li><li>50 People/group</li><li>3 AI Agents</li><li>Priority support</li><li>7-day trial</li></ul></div><div><button class="btn" onclick="buyPlan('advanced',1)">Buy month</button><div style="margin-top:10px"><a class="btn secondary" href="bundle-3.html">3mo (5% off)</a> <a class="btn secondary" href="bundle-6.html">6mo (10% off)</a></div></div></div>
 
-      <div class="plan">
-        <div>
-          <h3>Pro</h3>
-          <div class="price">€54.99 / month</div>
-          <ul>
-            <li>Unlimited Apps</li>
-            <li>Unlimited Messages</li>
-            <li>Unlimited Users</li>
-            <li>10 AI Agents</li>
-            <li>Dedicated manager</li>
-            <li>14-day free trial</li>
-          </ul>
-        </div>
-        <div>
-          <button class="btn" onclick="buyPlan('pro',1)">Buy month</button>
-          <div style="margin-top:10px">
-            <a class="btn secondary" href="bundle-3.html">3mo (5% off)</a>
-            <a class="btn secondary" href="bundle-6.html">6mo (10% off)</a>
-            <a class="btn secondary" href="bundle-12.html">12mo (20% off)</a>
-          </div>
-        </div>
-      </div>
+      <div class="plan"><div><h3>Pro</h3><div class="price">€54.99 / month</div><ul><li>Unlimited Apps</li><li>Unlimited Messages</li><li>Unlimited Users</li><li>10 AI Agents</li><li>24/7 support</li><li>14-day trial</li></ul></div><div><button class="btn" onclick="buyPlan('pro',1)">Buy month</button><div style="margin-top:10px"><a class="btn secondary" href="bundle-3.html">3mo (5% off)</a> <a class="btn secondary" href="bundle-6.html">6mo (10% off)</a></div></div></div>
     </div>
 
     <div style="margin-top:26px; text-align:center" class="deals">

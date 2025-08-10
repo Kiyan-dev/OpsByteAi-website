@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>6-Month Bundles</title>
+<link rel="stylesheet" href="style.css"/><script src="script.js" defer></script>
+</head>
+<body>
+<header class="header"><div class="logo">OpsByteAi</div><button class="menu-toggle" onclick="toggleMenu()">☰</button></header>
+<nav id="offcanvas-menu" class="offcanvas"> ... same menu links ... </nav>
+<main class="main">
+  <section class="pricing-section">
+    <h1 style="text-align:center;color:var(--accent)">6-Month Bundles — 10% off</h1>
+    <div class="pricing-grid">
+      <div class="plan">
+        <div><h3>Starter — 6 months</h3><p class="price">€8.09 / month (billed 6 months)</p></div>
+        <div><button onclick="buyPlan('starter',6)" class="btn">Buy 6 months</button></div>
+      </div>
+      <div class="plan">
+        <div><h3>Advanced — 6 months</h3><p class="price">€22.49 / month (billed 6 months)</p></div>
+        <div><button onclick="buyPlan('advanced',6)" class="btn">Buy 6 months</button></div>
+      </div>
+      <div class="plan">
+        <div><h3>Pro — 6 months</h3><p class="price">€46.74 / month (billed 6 months)</p></div>
+        <div><button onclick="buyPlan('pro',6)" class="btn">Buy 6 months</button></div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

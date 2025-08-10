@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Features - OpsByteAi</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
-</head>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Features</title><link rel="stylesheet" href="style.css"/><script src="script.js" defer></script></head>
 <body>
-<header>
-    <div class="logo">OpsByteAi</div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav id="menu">
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About Us</a>
-        <a href="login.html">Login</a>
-        <a href="signup.html">Sign Up</a>
-    </nav>
-</header>
+<header class="header"><div class="logo">OpsByteAi</div><button class="menu-toggle" onclick="toggleMenu()">☰</button></header>
+<nav id="offcanvas-menu" class="offcanvas">
+  <a href="index.html">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="bundle-3.html">Bundles (3mo)</a>
+  <a href="bundle-6.html">Bundles (6mo)</a><a href="bundle-12.html">Bundles (1yr)</a><a href="faq.html">FAQ</a><a href="about.html">About</a>
+  <a href="login.html">Log in</a><a href="signup.html">Sign up</a>
+</nav>
 
-<section class="features-page">
-    <h1>Features</h1>
-    <ul>
-        <li>Multi-App Integration</li>
-        <li>AI Agents for Automation</li>
-        <li>Real-time Collaboration</li>
-        <li>Secure Messaging</li>
-        <li>Custom AI Training</li>
-    </ul>
-</section>
+<main class="main">
+  <section class="features-page">
+    <h1 style="color:var(--accent);text-align:center">Features</h1>
+    <div class="features-grid">
+      <div class="feature-card" onclick="toggleFeature(this)"><h3>AI Chatbots</h3><p>Build smart chatbots that act for you.</p></div>
+      <div class="feature-card" onclick="toggleFeature(this)"><h3>Automations</h3><p>Chain tools and actions into powerful flows.</p></div>
+      <div class="feature-card" onclick="toggleFeature(this)"><h3>Integrations</h3><p>Connect TikTok, Gmail, Drive, YouTube and more.</p></div>
+      <div class="feature-card" onclick="toggleFeature(this)"><h3>Scheduling</h3><p>Run tasks every minute up to weekly schedules.</p></div>
+      <div class="feature-card" onclick="toggleFeature(this)"><h3>Multi-language</h3><p>Assistant replies in your device language.</p></div>
+      <div class="feature-card" onclick="toggleFeature(this)"><h3>Team & Roles</h3><p>Share BOTS and accounts with team members.</p></div>
+    </div>
+  </section>
+</main>
 </body>
 </html>

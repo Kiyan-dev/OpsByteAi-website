@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OpsByteAi</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpsByteAi - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 <header>
-    <div class="logo">OpsByteAi</div>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <nav id="menu">
-        <a href="index.html">Home</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="features.html">Features</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About Us</a>
-        <a href="login.html">Login</a>
-        <a href="signup.html">Sign Up</a>
-    </nav>
+  <div class="logo">OpsByteAi</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <nav id="menu">
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About Us</a>
+    <a href="login.html">Log In</a>
+    <a href="signup.html">Sign Up</a>
+  </nav>
 </header>
 
 <section class="hero">
-    <h1>Boost Your Business with AI</h1>
-    <p>Automate. Innovate. Dominate.</p>
-    <button onclick="location.href='pricing.html'">View Plans</button>
-    <button onclick="location.href='signup.html'">Try for Free</button>
+  <h1>Welcome to OpsByteAi</h1>
+  <p>Smart AI tools to power your business.</p>
+  <div class="buttons">
+    <a href="pricing.html" class="btn">Get Started</a>
+    <a href="signup.html" class="btn">Demo</a>
+  </div>
 </section>
 
-<section class="features-section">
-    <h2>Our Key Features</h2>
-    <div class="feature" onclick="toggleFeature(this)">
-        Smart Automation
-        <p>Streamline repetitive tasks with AI-driven workflows.</p>
-    </div>
-    <div class="feature" onclick="toggleFeature(this)">
-        Real-Time Insights
-        <p>Get live analytics for smarter decisions.</p>
-    </div>
-    <div class="feature" onclick="toggleFeature(this)">
-        Secure Data Handling
-        <p>Enterprise-grade encryption and protection.</p>
-    </div>
+<section class="features-home">
+  <h2>Powerful Features</h2>
+  <div class="feature" onclick="toggleFeature(this)">
+    <h3>AI Assistance</h3>
+    <p class="hidden">Get instant answers and smart automation with our AI agents.</p>
+  </div>
+  <div class="feature" onclick="toggleFeature(this)">
+    <h3>Team Collaboration</h3>
+    <p class="hidden">Seamless communication with groups and messengers.</p>
+  </div>
+  <div class="feature" onclick="toggleFeature(this)">
+    <h3>Multi-Platform</h3>
+    <p class="hidden">Works on all devices with cloud syncing.</p>
+  </div>
 </section>
 
 <footer>
+  <div class="footer-links">
     <a href="about.html">About Us</a>
     <a href="faq.html">FAQ</a>
+    <a href="features.html">Features</a>
     <a href="pricing.html">Pricing</a>
+  </div>
+  <p>© 2025 OpsByteAi. All rights reserved.</p>
 </footer>
-<script src="script.js"></script>
 </body>
 </html>

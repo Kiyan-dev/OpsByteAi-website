@@ -1,53 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>OpsByteAi — Home</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OpsByteAI</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo">OpsByteAi</div>
-    <button class="menu-toggle" aria-label="menu" onclick="toggleMenu()">☰</button>
-  </header>
 
-  <nav id="offcanvas-menu" class="offcanvas">
-    <a href="index.html">Home</a>
-    <a href="features.html">Features</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="bundles.html">Bundles</a>
-    <a href="faq.html">FAQ</a>
-    <a href="about.html">About</a>
-    <a href="login.html">Log In</a>
-    <a href="signup.html">Sign Up</a>
+<header>
+  <div class="logo">OpsByteAI</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="bundles.html">Bundles</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+    </ul>
   </nav>
+</header>
 
-  <main class="main">
-    <section class="hero">
-      <h1>Smart AI tools to power your business</h1>
-      <p>Connect apps, automate tasks, post content and manage workflows using friendly chat commands.</p>
-      <div class="cta hero-cta">
-        <a class="btn" href="pricing.html">Get Started</a>
-        <a class="btn" href="signup.html">Demo</a>
-      </div>
-    </section>
+<section class="hero">
+  <h1>Welcome to OpsByteAI</h1>
+  <p>Powerful AI solutions to boost your productivity.</p>
+  <div class="hero-buttons">
+    <a href="pricing.html" class="btn green">Get Started</a>
+    <a href="demo.html" class="btn white">Demo</a>
+  </div>
+</section>
 
-    <section class="section features">
-      <h2 style="color:var(--accent); text-align:center">Powerful features</h2>
-      <div class="features-grid">
-        <div class="feature-card" onclick="toggleFeature(this)"><h3>Connect Any App</h3><p>Easily integrate your favorite apps — social, email, cloud, AI services.</p></div>
-        <div class="feature-card" onclick="toggleFeature(this)"><h3>Smart Scheduling</h3><p>Create automations that run every minute, hourly, daily or weekly.</p></div>
-        <div class="feature-card" onclick="toggleFeature(this)"><h3>Multi-Language</h3><p>Works in the language on your device; localized AI responses.</p></div>
-      </div>
-    </section>
-
-    <div class="footer">
-      <div style="margin-bottom:12px"><a href="about.html">About</a> • <a href="faq.html">FAQ</a> • <a href="pricing.html">Plans</a></div>
-      <div style="color:var(--muted)">© 2025 OpsByteAi</div>
+<section class="plans">
+  <h2>Our Plans</h2>
+  <div class="plan-container">
+    <div class="plan-card">
+      <h3>Beginner</h3>
+      <p class="price">$8.99/month</p>
+      <ul>
+        <li>5 Apps</li>
+        <li>2 Messengers</li>
+        <li>50 People in group</li>
+        <li>1 AI Agent</li>
+        <li>Basic Support</li>
+      </ul>
+      <p class="discount-info">3 months: 10% off | 6 months: 15% off | 12 months: 20% off</p>
     </div>
-  </main>
+
+    <div class="plan-card">
+      <h3>Advanced</h3>
+      <p class="price">$24.99/month</p>
+      <ul>
+        <li>15 Apps</li>
+        <li>5 Messengers</li>
+        <li>200 People in group</li>
+        <li>5 AI Agents</li>
+        <li>Priority Support</li>
+      </ul>
+      <p class="discount-info">3 months: 10% off | 6 months: 15% off | 12 months: 20% off</p>
+    </div>
+
+    <div class="plan-card">
+      <h3>Pro</h3>
+      <p class="price">$54.99/month</p>
+      <ul>
+        <li>Unlimited Apps</li>
+        <li>Unlimited Messengers</li>
+        <li>Unlimited People</li>
+        <li>Unlimited AI Agents</li>
+        <li>Premium Support</li>
+      </ul>
+      <p class="discount-info">3 months: 10% off | 6 months: 15% off | 12 months: 20% off</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 OpsByteAI. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>

@@ -1,50 +1,71 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  background: black;
-  color: white;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
 }
 
+/* ===== HEADER & NAV ===== */
 header {
-  background: black;
-  color: green;
-  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-.nav-links {
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
   list-style: none;
   display: flex;
   gap: 15px;
 }
 
-.nav-links a {
-  color: green;
-  text-decoration: none;
-}
-
-.hero {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.btn {
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 6px;
-  display: inline-block;
-}
-
-.btn.green {
-  background: green;
+nav ul li a {
   color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.btn.white {
-  background: white;
-  color: black;
+nav ul li a:hover,
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* ===== BURGER MENU ===== */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+
+/* ===== PRICING SECTION ===== */
+.pricing {
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .plan-container {
@@ -52,29 +73,126 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
 }
 
 .plan-card {
-  background: black;
-  border: 2px solid white;
-  padding: 20px;
-  width: 280px;
+  background-color: white;
+  border: 2px solid #28a745;
   border-radius: 10px;
+  padding: 20px;
+  width: 300px;
   text-align: center;
 }
 
-.discount-info {
-  font-size: 0.8em;
-  color: green;
+.plan-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.6rem;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.plan-card ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.plan-card ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .bundle-links {
-  text-align: center;
-  margin-top: 30px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.bundle-details {
-  padding: 20px;
+.bundle-links a {
+  background-color: #28a745;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 5px;
   text-align: center;
+  font-size: 0.9rem;
+}
+
+.bundle-links a:hover {
+  background-color: #218838;
+}
+
+/* ===== FAQ & ABOUT ===== */
+section {
+  padding: 30px 20px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #28a745;
+  font-size: 1.8rem;
+}
+
+.faq-item {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* ===== BUTTONS ===== */
+button, .btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+button:hover, .btn:hover {
+  background-color: #218838;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #28a745;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .plan-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

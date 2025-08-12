@@ -1,14 +1,46 @@
-<section class="pricing">
-    <div class="plan">
-        <h3>12-Month Beginner Bundle</h3>
-        <p>Total: $86.30 (20% off)</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>12 Month Bundles — OpsByteAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">OpsByteAI</div>
+    <nav class="nav" id="mainNav"> ... </nav>
+    <button id="burgerBtn" class="burger" aria-label="menu">☰</button>
+  </header>
+
+  <main class="content">
+    <h1>12-Month Bundles — Total Price (20% off)</h1>
+
+    <div class="pricing-grid">
+      <div class="plan">
+        <h3>Beginner — 12 months</h3>
+        <p class="price">Monthly: €8.99</p>
+        <p class="price">Total (12 × €8.99) = €107.88 → 20% off = <strong>€86.30</strong></p>
+        <button class="btn primary" onclick="buyBundle('beginner',12)">Buy Beginner 12mo</button>
+      </div>
+
+      <div class="plan">
+        <h3>Advanced — 12 months</h3>
+        <p class="price">Monthly: €24.99</p>
+        <p class="price">Total (12 × €24.99) = €299.88 → 20% off = <strong>€239.90</strong></p>
+        <button class="btn primary" onclick="buyBundle('advanced',12)">Buy Advanced 12mo</button>
+      </div>
+
+      <div class="plan">
+        <h3>Pro — 12 months</h3>
+        <p class="price">Monthly: €54.99</p>
+        <p class="price">Total (12 × €54.99) = €659.88 → 20% off = <strong>€527.90</strong></p>
+        <button class="btn primary" onclick="buyBundle('pro',12)">Buy Pro 12mo</button>
+      </div>
     </div>
-    <div class="plan">
-        <h3>12-Month Pro Bundle</h3>
-        <p>Total: $143.90 (20% off)</p>
-    </div>
-    <div class="plan">
-        <h3>12-Month Enterprise Bundle</h3>
-        <p>Total: $287.90 (20% off)</p>
-    </div>
-</section>
+  </main>
+
+  <footer class="site-footer"><small>© 2025 OpsByteAI</small></footer>
+</body>
+</html>

@@ -1,16 +1,16 @@
-// Burger menu toggle
-const burger = document.getElementById('burger');
-const navLinks = document.getElementById('nav-links');
+// Burger Menu Toggle
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("navLinks");
 
-if (burger && navLinks) {
-  burger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-}
-
-// Close menu when clicking a link (mobile)
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('show');
-  });
+burger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
 });
+
+// Check login before purchasing
+function checkLogin() {
+    const isLoggedIn = false; // Replace with real login check
+    if (!isLoggedIn) {
+        alert("Please log in first to proceed with your purchase.");
+        window.location.href = "login.html";
+    }
+}

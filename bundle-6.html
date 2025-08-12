@@ -1,14 +1,46 @@
-<section class="pricing">
-    <div class="plan">
-        <h3>6-Month Beginner Bundle</h3>
-        <p>Total: $45.83 (15% off)</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>6 Month Bundles — OpsByteAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">OpsByteAI</div>
+    <nav class="nav" id="mainNav"> ... </nav>
+    <button id="burgerBtn" class="burger" aria-label="menu">☰</button>
+  </header>
+
+  <main class="content">
+    <h1>6-Month Bundles — Total Price (15% off)</h1>
+
+    <div class="pricing-grid">
+      <div class="plan">
+        <h3>Beginner — 6 months</h3>
+        <p class="price">Monthly: €8.99</p>
+        <p class="price">Total (6 × €8.99) = €53.94 → 15% off = <strong>€45.85</strong></p>
+        <button class="btn primary" onclick="buyBundle('beginner',6)">Buy Beginner 6mo</button>
+      </div>
+
+      <div class="plan">
+        <h3>Advanced — 6 months</h3>
+        <p class="price">Monthly: €24.99</p>
+        <p class="price">Total (6 × €24.99) = €149.94 → 15% off = <strong>€127.45</strong></p>
+        <button class="btn primary" onclick="buyBundle('advanced',6)">Buy Advanced 6mo</button>
+      </div>
+
+      <div class="plan">
+        <h3>Pro — 6 months</h3>
+        <p class="price">Monthly: €54.99</p>
+        <p class="price">Total (6 × €54.99) = €329.94 → 15% off = <strong>€280.45</strong></p>
+        <button class="btn primary" onclick="buyBundle('pro',6)">Buy Pro 6mo</button>
+      </div>
     </div>
-    <div class="plan">
-        <h3>6-Month Pro Bundle</h3>
-        <p>Total: $76.43 (15% off)</p>
-    </div>
-    <div class="plan">
-        <h3>6-Month Enterprise Bundle</h3>
-        <p>Total: $152.93 (15% off)</p>
-    </div>
-</section>
+  </main>
+
+  <footer class="site-footer"><small>© 2025 OpsByteAI</small></footer>
+</body>
+</html>

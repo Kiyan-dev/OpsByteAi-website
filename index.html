@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpsByte AI - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OpsByteAI — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-<header>
-    <div class="logo">OpsByte AI</div>
-    <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="active">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html">Plans</a>
-        <a href="bundles.html">Bundles</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About Us</a>
-        <a href="login.html" class="btn">Login</a>
-        <a href="signup.html" class="btn">Sign Up</a>
+  <header class="site-header">
+    <div class="brand">OpsByteAI</div>
+
+    <nav class="nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="features.html" class="nav-link">Features</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="bundles.html" class="nav-link">Bundles</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="login.html" class="nav-link auth">Login</a>
+      <a href="signup.html" class="nav-link auth">Sign up</a>
     </nav>
-    <div class="burger" id="burger">&#9776;</div>
-</header>
 
-<section class="hero">
-    <h1>Welcome to OpsByte AI</h1>
-    <p>Your AI-powered solution hub. Fast, reliable, and smart.</p>
-    <a href="features.html" class="btn big-btn">Get Started</a>
-    <a href="pricing.html" class="btn big-btn">View Plans</a>
-</section>
+    <button id="burgerBtn" class="burger" aria-label="menu">☰</button>
+  </header>
 
-<footer>
-    <p>© 2025 OpsByte AI. All Rights Reserved.</p>
-</footer>
+  <main>
+    <section class="hero">
+      <h1>Welcome to OpsByteAI</h1>
+      <p>Connect apps, automate tasks and run your workflows by chat. Fast. Secure. Multilingual.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="pricing.html">Get started</a>
+        <a class="btn ghost" href="bundles.html">Bundles</a>
+      </div>
+    </section>
+
+    <section class="quick-features">
+      <div class="card">
+        <h3>Connect Any App</h3>
+        <p>Link messaging, cloud, social, and AI tools with a drag-and-drop flow.</p>
+      </div>
+      <div class="card">
+        <h3>Smart Scheduling</h3>
+        <p>Run automations every minute, hourly, daily or weekly.</p>
+      </div>
+      <div class="card">
+        <h3>Multi-language</h3>
+        <p>Assistant responds in the language of the device.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 OpsByteAI — All rights reserved</small>
+  </footer>
 </body>
 </html>

@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sign Up - OpsByte AI</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sign Up - OpsByteAI</title>
+<link rel="stylesheet" href="style.css" />
 <script src="script.js" defer></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
 <header>
-    <div class="logo">OpsByte AI</div>
-    <nav class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html">Plans</a>
-        <a href="bundles.html">Bundles</a>
-    </nav>
-    <div class="burger" id="burger">&#9776;</div>
+  <nav class="navbar">
+    <div class="logo">OpsByteAI</div>
+  </nav>
 </header>
 
-<section class="content form-section">
-    <h1>Sign Up</h1>
-    <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit" class="btn">Create Account</button>
-    </form>
+<section class="auth-form">
+  <h1>Sign Up</h1>
+  <input type="text" placeholder="Name">
+  <input type="email" placeholder="Email">
+  <input type="password" placeholder="Password">
+  <button class="btn-green">Sign Up</button>
+  <div id="g_id_onload"
+       data-client_id="YOUR_GOOGLE_CLIENT_ID"
+       data-login_uri=""
+       data-auto_prompt="false">
+  </div>
+  <div class="g_id_signin" data-type="standard"></div>
 </section>
 
-<footer>
-    <p>© 2025 OpsByte AI. All Rights Reserved.</p>
-</footer>
 </body>
 </html>

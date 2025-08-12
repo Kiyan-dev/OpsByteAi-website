@@ -1,23 +1,104 @@
-<section class="pricing">
-    <div class="plan">
-        <h3>Beginner</h3>
-        <p>$8.99/month</p>
-        <p>3 months: 10% off</p>
-        <p>6 months: 15% off</p>
-        <p>12 months: 20% off</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OpsByteAI — Pricing</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">OpsByteAI</div>
+    <nav class="nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="features.html" class="nav-link">Features</a>
+      <a href="pricing.html" class="nav-link active">Pricing</a>
+      <a href="bundles.html" class="nav-link">Bundles</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="login.html" class="nav-link auth">Login</a>
+      <a href="signup.html" class="nav-link auth">Sign up</a>
+    </nav>
+    <button id="burgerBtn" class="burger" aria-label="menu">☰</button>
+  </header>
+
+  <main class="content">
+    <h1 class="page-title">Plans</h1>
+    <div class="pricing-grid">
+      <div class="plan">
+        <h2>Beginner</h2>
+        <div class="price">€8.99 / month</div>
+        <ul class="plan-features">
+          <li>5 Apps</li>
+          <li>1 Messenger</li>
+          <li>50 People / group</li>
+          <li>1 AI Agent</li>
+          <li>7-day free trial</li>
+        </ul>
+        <div class="deals">
+          <div>3 months — <strong>10% off</strong></div>
+          <div>6 months — <strong>15% off</strong></div>
+          <div>12 months — <strong>20% off</strong></div>
+        </div>
+        <div class="plan-actions">
+          <button class="btn primary" onclick="handleSelect('beginner')">Choose</button>
+          <a class="link" href="bundle-3.html">3mo bundle</a>
+          <a class="link" href="bundle-6.html">6mo bundle</a>
+          <a class="link" href="bundle-12.html">12mo bundle</a>
+        </div>
+      </div>
+
+      <div class="plan">
+        <h2>Advanced</h2>
+        <div class="price">€24.99 / month</div>
+        <ul class="plan-features">
+          <li>15 Apps</li>
+          <li>3 Messengers</li>
+          <li>200 People / group</li>
+          <li>3 AI Agents</li>
+          <li>7-day free trial</li>
+        </ul>
+        <div class="deals">
+          <div>3 months — <strong>10% off</strong></div>
+          <div>6 months — <strong>15% off</strong></div>
+          <div>12 months — <strong>20% off</strong></div>
+        </div>
+        <div class="plan-actions">
+          <button class="btn primary" onclick="handleSelect('advanced')">Choose</button>
+          <a class="link" href="bundle-3.html">3mo bundle</a>
+          <a class="link" href="bundle-6.html">6mo bundle</a>
+          <a class="link" href="bundle-12.html">12mo bundle</a>
+        </div>
+      </div>
+
+      <div class="plan">
+        <h2>Pro</h2>
+        <div class="price">€54.99 / month</div>
+        <ul class="plan-features">
+          <li>Unlimited Apps</li>
+          <li>Unlimited Messengers</li>
+          <li>Unlimited People</li>
+          <li>10 AI Agents</li>
+          <li>14-day free trial</li>
+        </ul>
+        <div class="deals">
+          <div>3 months — <strong>10% off</strong></div>
+          <div>6 months — <strong>15% off</strong></div>
+          <div>12 months — <strong>20% off</strong></div>
+        </div>
+        <div class="plan-actions">
+          <button class="btn primary" onclick="handleSelect('pro')">Choose</button>
+          <a class="link" href="bundle-3.html">3mo bundle</a>
+          <a class="link" href="bundle-6.html">6mo bundle</a>
+          <a class="link" href="bundle-12.html">12mo bundle</a>
+        </div>
+      </div>
     </div>
-    <div class="plan">
-        <h3>Pro</h3>
-        <p>$14.99/month</p>
-        <p>3 months: 10% off</p>
-        <p>6 months: 15% off</p>
-        <p>12 months: 20% off</p>
-    </div>
-    <div class="plan">
-        <h3>Enterprise</h3>
-        <p>$29.99/month</p>
-        <p>3 months: 10% off</p>
-        <p>6 months: 15% off</p>
-        <p>12 months: 20% off</p>
-    </div>
-</section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 OpsByteAI</small>
+  </footer>
+</body>
+</html>

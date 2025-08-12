@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>OpsByteAI — Bundles</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bundles - OpsByteAI</title>
+<link rel="stylesheet" href="style.css" />
+<script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand">OpsByteAI</div>
-    <nav class="nav" id="mainNav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="features.html" class="nav-link">Features</a>
-      <a href="pricing.html" class="nav-link">Pricing</a>
-      <a href="bundles.html" class="nav-link active">Bundles</a>
-      <a href="faq.html" class="nav-link">FAQ</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="login.html" class="nav-link auth">Login</a>
-      <a href="signup.html" class="nav-link auth">Sign up</a>
-    </nav>
-    <button id="burgerBtn" class="burger" aria-label="menu">☰</button>
-  </header>
+<header>
+  <nav class="navbar">
+    <div class="logo">OpsByteAI</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="bundles.html" class="active">Bundles</a></li>
+      <li><a href="login.html" class="btn-green">Login</a></li>
+      <li><a href="signup.html" class="btn-green">Sign Up</a></li>
+    </ul>
+    <div class="burger">&#9776;</div>
+  </nav>
+</header>
 
-  <main class="content">
-    <h1>Bundles</h1>
-    <p class="muted">Pick the bundle duration and pay the total up front (discount applied).</p>
+<section class="page-header">
+  <h1>Our Bundles</h1>
+  <p>Choose your preferred subscription length with built-in discounts.</p>
+</section>
 
-    <div class="pricing-grid">
-      <div class="plan">
-        <h3>3-Month Bundles (10% off)</h3>
-        <p class="bundle-price">Beginner: €24.27 total</p>
-        <p class="bundle-price">Advanced: €67.47 total</p>
-        <p class="bundle-price">Pro: €148.47 total</p>
-        <button class="btn primary" onclick="buyBundle('beginner',3)">Buy Beginner 3mo</button>
-      </div>
+<section class="bundle-row">
+  <div class="bundle-card">
+    <h3>3 Months</h3>
+    <p>10% off</p>
+    <a href="bundle-3.html" class="btn-green">View</a>
+  </div>
+  <div class="bundle-card">
+    <h3>6 Months</h3>
+    <p>15% off</p>
+    <a href="bundle-6.html" class="btn-green">View</a>
+  </div>
+  <div class="bundle-card">
+    <h3>1 Year</h3>
+    <p>20% off</p>
+    <a href="bundle-12.html" class="btn-green">View</a>
+  </div>
+</section>
 
-      <div class="plan">
-        <h3>6-Month Bundles (15% off)</h3>
-        <p class="bundle-price">Beginner: €45.85 total</p>
-        <p class="bundle-price">Advanced: €127.45 total</p>
-        <p class="bundle-price">Pro: €280.45 total</p>
-        <button class="btn primary" onclick="buyBundle('beginner',6)">Buy Beginner 6mo</button>
-      </div>
-
-      <div class="plan">
-        <h3>12-Month Bundles (20% off)</h3>
-        <p class="bundle-price">Beginner: €86.30 total</p>
-        <p class="bundle-price">Advanced: €239.90 total</p>
-        <p class="bundle-price">Pro: €527.90 total</p>
-        <button class="btn primary" onclick="buyBundle('beginner',12)">Buy Beginner 12mo</button>
-      </div>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <small>© 2025 OpsByteAI</small>
-  </footer>
+<footer>
+  <p>&copy; 2025 OpsByteAI. All rights reserved.</p>
+</footer>
 </body>
 </html>

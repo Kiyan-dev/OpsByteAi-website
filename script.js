@@ -1,25 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const burger = document.querySelector(".burger");
-  const navLinks = document.querySelector(".nav-links");
+// Burger menu toggle
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('nav-links');
 
-  burger.addEventListener("click", () => {
-    navLinks.classList.toggle("nav-active");
-  });
-});
-
-function requireLogin() {
-  const modal = document.createElement("div");
-  modal.className = "modal";
-  modal.innerHTML = `
-    <div class="modal-content">
-      <h2>Please Sign In</h2>
-      <p>You need to be logged in to continue to checkout.</p>
-      <a href="login.html" class="btn-green">Login</a>
-      <a href="signup.html" class="btn-green">Sign Up</a>
-    </div>
-  `;
-  document.body.appendChild(modal);
-  modal.addEventListener("click", e => {
-    if (e.target === modal) modal.remove();
+if (burger && navLinks) {
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
   });
 }
+
+// Close menu when clicking a link (mobile)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+  });
+});

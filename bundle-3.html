@@ -1,14 +1,46 @@
-<section class="pricing">
-    <div class="plan">
-        <h3>3-Month Beginner Bundle</h3>
-        <p>Total: $24.27 (10% off)</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3 Month Bundles — OpsByteAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">OpsByteAI</div>
+    <nav class="nav" id="mainNav"> ... </nav>
+    <button id="burgerBtn" class="burger" aria-label="menu">☰</button>
+  </header>
+
+  <main class="content">
+    <h1>3-Month Bundles — Total Price (10% off)</h1>
+
+    <div class="pricing-grid">
+      <div class="plan">
+        <h3>Beginner — 3 months</h3>
+        <p class="price">Monthly: €8.99</p>
+        <p class="price">Total (3 × €8.99) = €26.97 → 10% off = <strong>€24.27</strong></p>
+        <button class="btn primary" onclick="buyBundle('beginner',3)">Buy Beginner 3mo</button>
+      </div>
+
+      <div class="plan">
+        <h3>Advanced — 3 months</h3>
+        <p class="price">Monthly: €24.99</p>
+        <p class="price">Total (3 × €24.99) = €74.97 → 10% off = <strong>€67.47</strong></p>
+        <button class="btn primary" onclick="buyBundle('advanced',3)">Buy Advanced 3mo</button>
+      </div>
+
+      <div class="plan">
+        <h3>Pro — 3 months</h3>
+        <p class="price">Monthly: €54.99</p>
+        <p class="price">Total (3 × €54.99) = €164.97 → 10% off = <strong>€148.47</strong></p>
+        <button class="btn primary" onclick="buyBundle('pro',3)">Buy Pro 3mo</button>
+      </div>
     </div>
-    <div class="plan">
-        <h3>3-Month Pro Bundle</h3>
-        <p>Total: $40.47 (10% off)</p>
-    </div>
-    <div class="plan">
-        <h3>3-Month Enterprise Bundle</h3>
-        <p>Total: $80.97 (10% off)</p>
-    </div>
-</section>
+  </main>
+
+  <footer class="site-footer"><small>© 2025 OpsByteAI</small></footer>
+</body>
+</html>

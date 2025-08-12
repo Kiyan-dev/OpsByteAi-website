@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bundles - OpsByte AI</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OpsByteAI — Bundles</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-<header>
-    <div class="logo">OpsByte AI</div>
-    <nav class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html">Plans</a>
-        <a href="bundles.html" class="active">Bundles</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About Us</a>
-        <a href="login.html" class="btn">Login</a>
-        <a href="signup.html" class="btn">Sign Up</a>
+  <header class="site-header">
+    <div class="brand">OpsByteAI</div>
+    <nav class="nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="features.html" class="nav-link">Features</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="bundles.html" class="nav-link active">Bundles</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="login.html" class="nav-link auth">Login</a>
+      <a href="signup.html" class="nav-link auth">Sign up</a>
     </nav>
-    <div class="burger" id="burger">&#9776;</div>
-</header>
+    <button id="burgerBtn" class="burger" aria-label="menu">☰</button>
+  </header>
 
-<section class="content">
-    <h1>Subscription Bundles</h1>
-    <div class="pricing-container">
-        <div class="plan">
-            <h2>3 Months</h2>
-            <p class="price">Beginner $24.27 (10% off)</p>
-            <p class="price">Pro $53.97 (10% off)</p>
-            <p class="price">Enterprise $134.97 (10% off)</p>
-            <a href="bundle-3.html" class="btn">View</a>
-        </div>
-        <div class="plan">
-            <h2>6 Months</h2>
-            <p class="price">Beginner $45.83 (15% off)</p>
-            <p class="price">Pro $101.93 (15% off)</p>
-            <p class="price">Enterprise $254.93 (15% off)</p>
-            <a href="bundle-6.html" class="btn">View</a>
-        </div>
-        <div class="plan">
-            <h2>12 Months</h2>
-            <p class="price">Beginner $86.30 (20% off)</p>
-            <p class="price">Pro $191.90 (20% off)</p>
-            <p class="price">Enterprise $479.90 (20% off)</p>
-            <a href="bundle-12.html" class="btn">View</a>
-        </div>
+  <main class="content">
+    <h1>Bundles</h1>
+    <p class="muted">Pick the bundle duration and pay the total up front (discount applied).</p>
+
+    <div class="pricing-grid">
+      <div class="plan">
+        <h3>3-Month Bundles (10% off)</h3>
+        <p class="bundle-price">Beginner: €24.27 total</p>
+        <p class="bundle-price">Advanced: €67.47 total</p>
+        <p class="bundle-price">Pro: €148.47 total</p>
+        <button class="btn primary" onclick="buyBundle('beginner',3)">Buy Beginner 3mo</button>
+      </div>
+
+      <div class="plan">
+        <h3>6-Month Bundles (15% off)</h3>
+        <p class="bundle-price">Beginner: €45.85 total</p>
+        <p class="bundle-price">Advanced: €127.45 total</p>
+        <p class="bundle-price">Pro: €280.45 total</p>
+        <button class="btn primary" onclick="buyBundle('beginner',6)">Buy Beginner 6mo</button>
+      </div>
+
+      <div class="plan">
+        <h3>12-Month Bundles (20% off)</h3>
+        <p class="bundle-price">Beginner: €86.30 total</p>
+        <p class="bundle-price">Advanced: €239.90 total</p>
+        <p class="bundle-price">Pro: €527.90 total</p>
+        <button class="btn primary" onclick="buyBundle('beginner',12)">Buy Beginner 12mo</button>
+      </div>
     </div>
-</section>
+  </main>
 
-<footer>
-    <p>© 2025 OpsByte AI. All Rights Reserved.</p>
-</footer>
+  <footer class="site-footer">
+    <small>© 2025 OpsByteAI</small>
+  </footer>
 </body>
 </html>

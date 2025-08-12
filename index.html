@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>OpsByteAI — Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OpsByteAI - Home</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand">OpsByteAI</div>
-
-    <nav class="nav" id="mainNav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="features.html" class="nav-link">Features</a>
-      <a href="pricing.html" class="nav-link">Pricing</a>
-      <a href="bundles.html" class="nav-link">Bundles</a>
-      <a href="faq.html" class="nav-link">FAQ</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="login.html" class="nav-link auth">Login</a>
-      <a href="signup.html" class="nav-link auth">Sign up</a>
+  <header>
+    <nav class="navbar">
+      <div class="logo">OpsByteAI</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="bundles.html">Bundles</a></li>
+        <li><a href="login.html" class="btn-green">Login</a></li>
+        <li><a href="signup.html" class="btn-green">Sign Up</a></li>
+      </ul>
+      <div class="burger">&#9776;</div>
     </nav>
-
-    <button id="burgerBtn" class="burger" aria-label="menu">☰</button>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to OpsByteAI</h1>
-      <p>Connect apps, automate tasks and run your workflows by chat. Fast. Secure. Multilingual.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="pricing.html">Get started</a>
-        <a class="btn ghost" href="bundles.html">Bundles</a>
-      </div>
-    </section>
+  <section class="hero">
+    <h1>Welcome to OpsByteAI</h1>
+    <p>Your AI assistant for everything you need.</p>
+    <div class="hero-buttons">
+      <a href="bundles.html" class="btn-green">View Bundles</a>
+      <a href="features.html" class="btn-outline">See Features</a>
+    </div>
+  </section>
 
-    <section class="quick-features">
-      <div class="card">
-        <h3>Connect Any App</h3>
-        <p>Link messaging, cloud, social, and AI tools with a drag-and-drop flow.</p>
+  <section class="home-bundles">
+    <h2>Popular Bundles</h2>
+    <div class="bundle-row">
+      <div class="bundle-card">
+        <h3>3 Months</h3>
+        <p>10% off — save instantly</p>
+        <a href="bundle-3.html" class="btn-green">View</a>
       </div>
-      <div class="card">
-        <h3>Smart Scheduling</h3>
-        <p>Run automations every minute, hourly, daily or weekly.</p>
+      <div class="bundle-card">
+        <h3>6 Months</h3>
+        <p>15% off — more savings</p>
+        <a href="bundle-6.html" class="btn-green">View</a>
       </div>
-      <div class="card">
-        <h3>Multi-language</h3>
-        <p>Assistant responds in the language of the device.</p>
+      <div class="bundle-card">
+        <h3>1 Year</h3>
+        <p>20% off — best value</p>
+        <a href="bundle-12.html" class="btn-green">View</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="site-footer">
-    <small>© 2025 OpsByteAI — All rights reserved</small>
+  <footer>
+    <p>&copy; 2025 OpsByteAI. All rights reserved.</p>
   </footer>
 </body>
 </html>

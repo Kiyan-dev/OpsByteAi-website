@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>3 Month Bundles — OpsByteAI</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>3 Month Bundle - OpsByteAI</title>
+<link rel="stylesheet" href="style.css" />
+<script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand">OpsByteAI</div>
-    <nav class="nav" id="mainNav"> ... </nav>
-    <button id="burgerBtn" class="burger" aria-label="menu">☰</button>
-  </header>
+<header>
+  <nav class="navbar">
+    <div class="logo">OpsByteAI</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="bundles.html" class="active">Bundles</a></li>
+      <li><a href="login.html" class="btn-green">Login</a></li>
+      <li><a href="signup.html" class="btn-green">Sign Up</a></li>
+    </ul>
+    <div class="burger">&#9776;</div>
+  </nav>
+</header>
 
-  <main class="content">
-    <h1>3-Month Bundles — Total Price (10% off)</h1>
+<section class="page-header">
+  <h1>3 Month Bundle</h1>
+  <p>10% off — Total price already discounted</p>
+</section>
 
-    <div class="pricing-grid">
-      <div class="plan">
-        <h3>Beginner — 3 months</h3>
-        <p class="price">Monthly: €8.99</p>
-        <p class="price">Total (3 × €8.99) = €26.97 → 10% off = <strong>€24.27</strong></p>
-        <button class="btn primary" onclick="buyBundle('beginner',3)">Buy Beginner 3mo</button>
-      </div>
+<section class="content">
+  <div class="bundle-card large">
+    <h2>Beginner Plan</h2>
+    <p>Original: $26.97 — Now: $24.27</p>
+    <button class="btn-green" onclick="requireLogin()">Get This Bundle</button>
+  </div>
+  <div class="bundle-card large">
+    <h2>Pro Plan</h2>
+    <p>Original: $59.97 — Now: $53.97</p>
+    <button class="btn-green" onclick="requireLogin()">Get This Bundle</button>
+  </div>
+</section>
 
-      <div class="plan">
-        <h3>Advanced — 3 months</h3>
-        <p class="price">Monthly: €24.99</p>
-        <p class="price">Total (3 × €24.99) = €74.97 → 10% off = <strong>€67.47</strong></p>
-        <button class="btn primary" onclick="buyBundle('advanced',3)">Buy Advanced 3mo</button>
-      </div>
-
-      <div class="plan">
-        <h3>Pro — 3 months</h3>
-        <p class="price">Monthly: €54.99</p>
-        <p class="price">Total (3 × €54.99) = €164.97 → 10% off = <strong>€148.47</strong></p>
-        <button class="btn primary" onclick="buyBundle('pro',3)">Buy Pro 3mo</button>
-      </div>
-    </div>
-  </main>
-
-  <footer class="site-footer"><small>© 2025 OpsByteAI</small></footer>
+<footer>
+  <p>&copy; 2025 OpsByteAI. All rights reserved.</p>
+</footer>
 </body>
 </html>

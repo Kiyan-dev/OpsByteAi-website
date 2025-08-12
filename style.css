@@ -1,67 +1,92 @@
-/* Base */
-:root{
-  --bg:#000;
-  --panel:#0b0b0b;
-  --accent:#00ff88;
-  --muted:#9aa3a3;
-  --white:#ffffff;
-}
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;background:var(--bg);color:var(--accent);font-family:Inter, Arial, sans-serif}
-
-/* Header */
-.site-header{
-  display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:linear-gradient(180deg,#050505,var(--panel));border-bottom:1px solid rgba(0,255,136,0.06);position:sticky;top:0;z-index:1000;
-}
-.brand{font-weight:700;font-size:1.2rem;color:var(--accent)}
-.nav{display:flex;gap:14px;align-items:center}
-.nav .nav-link{color:var(--accent);text-decoration:none;padding:6px 8px;font-weight:600}
-.nav .nav-link.active{background:rgba(0,255,136,0.06);border-radius:6px}
-.nav .auth{border:1px solid rgba(0,255,136,0.08);padding:6px 8px;border-radius:6px}
-
-/* Burger (mobile) */
-.burger{display:none;background:transparent;border:none;color:var(--accent);font-size:22px;cursor:pointer;padding:6px 8px}
-@media (max-width:900px){
-  .nav{position:fixed;right:-340px;top:0;height:100vh;width:320px;background:var(--panel);flex-direction:column;align-items:flex-start;padding-top:80px;gap:12px;transition:right .28s ease;box-shadow:-8px 0 30px rgba(0,0,0,.6)}
-  .nav .nav-link{width:100%;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.02)}
-  .nav.active{right:0}
-  .burger{display:block}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #0f0;
 }
 
-/* Hero */
-.hero{padding:48px 18px;text-align:center}
-.hero h1{font-size:clamp(22px,4vw,40px);color:var(--accent);margin:0}
-.hero p{color:var(--muted);max-width:820px;margin:12px auto}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #000;
+}
 
-/* Buttons */
-.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
-.btn.primary{background:var(--accent);color:#000}
-.btn.ghost{background:transparent;border:1px solid rgba(0,255,136,0.12);color:var(--accent)}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
 
-/* Content grid */
-.content{padding:28px 18px}
-.pricing-grid{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
-.plan{background:rgba(255,255,255,0.03);border:2px solid rgba(255,255,255,0.06);padding:18px;border-radius:12px;width:300px;color:var(--muted)}
-.plan h2,.plan h3{color:var(--accent);margin:0 0 8px}
-.price{color:var(--white);font-weight:700;margin-bottom:8px}
-.plan-features{list-style: none;padding-left:0;color:var(--muted);margin:8px 0}
+.nav-links a {
+  color: #0f0;
+  text-decoration: none;
+}
 
-/* Small text & links */
-.deals{color:var(--muted);font-size:0.95rem;margin-top:8px}
-.link{display:inline-block;margin:8px 8px 0 0;color:var(--accent);text-decoration:underline;cursor:pointer}
+.burger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
-/* footer */
-.site-footer{padding:18px;text-align:center;color:rgba(255,255,255,0.4);border-top:1px solid rgba(255,255,255,0.02)}
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #111;
+    height: 100%;
+    width: 250px;
+    flex-direction: column;
+    padding: 2rem;
+    transition: right 0.3s ease;
+  }
+  .nav-links.nav-active {
+    right: 0;
+  }
+}
 
-/* popup */
-.popup-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);display:none;align-items:center;justify-content:center;z-index:2000}
-.popup-box{background:var(--panel);border:2px solid var(--accent);padding:18px;border-radius:10px;width:92%;max-width:360px;text-align:center;color:var(--muted)}
-.popup-box h2{color:var(--accent);margin-bottom:8px}
-.popup-box p{margin-bottom:14px}
-.popup-box .btn{width:100%}
+.btn-green {
+  background: #0f0;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-decoration: none;
+}
 
-/* responsive tweaks */
-@media (max-width:480px){
-  .plan{width:92%}
-  .hero{padding:34px 14px}
+.bundle-card, .plan-card, .feature-box {
+  border: 1px solid #0f0;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.auth-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-form input {
+  padding: 0.5rem;
+}
+
+.modal {
+  position: fixed;
+  top:0;left:0;right:0;bottom:0;
+  background: rgba(0,0,0,0.7);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.modal-content {
+  background: #111;
+  padding: 2rem;
+  border: 1px solid #0f0;
+  text-align: center;
 }

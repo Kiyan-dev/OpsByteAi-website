@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>3 Month Bundle - OpsByteAI</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Month Bundle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 <header>
-  <nav class="navbar">
-    <div class="logo">OpsByteAI</div>
+    <div class="logo">OpsByte AI</div>
+    <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Plans</a>
+        <a href="bundles.html" class="active">Bundles</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html" class="btn">Login</a>
+        <a href="signup.html" class="btn">Sign Up</a>
+    </nav>
     <div class="burger" id="burger">&#9776;</div>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="bundles.html" class="active">Bundles</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-    </ul>
-  </nav>
 </header>
 
-<main>
-  <section class="page-header">
-    <h1>3 Month Beginner Bundle</h1>
-    <p>Special price: $24.27 (10% off total)</p>
-    <a href="login.html" class="btn-green">Sign in to Purchase</a>
-  </section>
-</main>
+<section class="content">
+    <h1>3 Month Bundle</h1>
+    <p>Beginner plan full price: $8.99/month × 3 months = $26.97</p>
+    <p>With 10% discount: $24.27 total</p>
+    <button onclick="checkLogin()">Purchase Bundle</button>
+</section>
 
 <footer>
-  <p>&copy; 2025 OpsByteAI. All rights reserved.</p>
+    <p>© 2025 OpsByte AI. All Rights Reserved.</p>
 </footer>
 </body>
 </html>

@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Bundles - OpsByteAI</title>
-<link rel="stylesheet" href="style.css" />
-<script src="script.js" defer></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bundles - OpsByteAI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
 </head>
 <body>
 <header>
   <nav class="navbar">
     <div class="logo">OpsByteAI</div>
-    <ul class="nav-links">
+    <div class="burger" id="burger">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="features.html">Features</a></li>
       <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="bundles.html" class="active">Bundles</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="about.html">About Us</a></li>
-      <li><a href="bundles.html" class="active">Bundles</a></li>
       <li><a href="login.html" class="btn-green">Login</a></li>
       <li><a href="signup.html" class="btn-green">Sign Up</a></li>
     </ul>
-    <div class="burger">&#9776;</div>
   </nav>
 </header>
 
-<section class="page-header">
-  <h1>Our Bundles</h1>
-  <p>Choose your preferred subscription length with built-in discounts.</p>
-</section>
-
-<section class="bundle-row">
-  <div class="bundle-card">
-    <h3>3 Months</h3>
-    <p>10% off</p>
-    <a href="bundle-3.html" class="btn-green">View</a>
-  </div>
-  <div class="bundle-card">
-    <h3>6 Months</h3>
-    <p>15% off</p>
-    <a href="bundle-6.html" class="btn-green">View</a>
-  </div>
-  <div class="bundle-card">
-    <h3>1 Year</h3>
-    <p>20% off</p>
-    <a href="bundle-12.html" class="btn-green">View</a>
-  </div>
-</section>
+<main>
+  <section class="page-header">
+    <h1>Bundle Deals</h1>
+    <p>Save more with multi-month plans</p>
+  </section>
+  <section class="plans">
+    <div class="plan">
+      <h3>3 Months - Beginner</h3>
+      <p>Was $26.97 → Now $24.27 (10% off)</p>
+      <a href="bundle-3.html" class="btn-green">Select</a>
+    </div>
+    <div class="plan">
+      <h3>6 Months - Beginner</h3>
+      <p>Was $53.94 → Now $45.85 (15% off)</p>
+      <a href="bundle-6.html" class="btn-green">Select</a>
+    </div>
+    <div class="plan">
+      <h3>12 Months - Beginner</h3>
+      <p>Was $107.88 → Now $86.30 (20% off)</p>
+      <a href="bundle-12.html" class="btn-green">Select</a>
+    </div>
+  </section>
+</main>
 
 <footer>
   <p>&copy; 2025 OpsByteAI. All rights reserved.</p>

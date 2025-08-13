@@ -1,49 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bundles - OpsByte AI</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bundles - OpsByte AI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
 </head>
 <body>
 <header>
-    <div class="logo">OpsByte AI</div>
-    <nav class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html">Plans</a>
-        <a href="bundles.html" class="active">Bundles</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About Us</a>
-        <a href="login.html" class="btn">Login</a>
-        <a href="signup.html" class="btn">Sign Up</a>
-    </nav>
-    <div class="burger" id="burger">&#9776;</div>
+  <div class="logo">OpsByte AI</div>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Plans</a>
+    <a href="bundles.html" class="active">Bundles</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About Us</a>
+    <a href="login.html" class="btn small">Login</a>
+    <a href="signup.html" class="btn small">Sign Up</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
 </header>
+<aside id="drawer" class="drawer">
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="pricing.html">Plans</a>
+  <a href="bundles.html" class="active">Bundles</a>
+  <a href="faq.html">FAQ</a>
+  <a href="about.html">About Us</a>
+  <a href="login.html" class="btn small">Login</a>
+  <a href="signup.html" class="btn small">Sign Up</a>
+</aside>
+<div id="overlay" class="overlay"></div>
 
-<section class="pricing">
-    <h1>Bundles</h1>
+<section class="content">
+  <h1>Subscription Bundles (Discounted Totals)</h1>
+  <div class="pricing-container">
     <div class="plan">
-        <h2>3 Months - 10% Off</h2>
-        <p class="price">$24.27 total</p>
-        <a href="bundle-3.html" class="btn">Choose</a>
+      <h2>3 Months <span class="badge">-10%</span></h2>
+      <p class="price">Beginner <strong>$24.27</strong></p>
+      <p class="price">Pro <strong>$53.97</strong></p>
+      <p class="price">Enterprise <strong>$134.97</strong></p>
+      <a href="bundle-3.html" class="btn">View</a>
     </div>
     <div class="plan">
-        <h2>6 Months - 15% Off</h2>
-        <p class="price">$45.84 total</p>
-        <a href="bundle-6.html" class="btn">Choose</a>
+      <h2>6 Months <span class="badge">-15%</span></h2>
+      <p class="price">Beginner <strong>$45.85</strong></p>
+      <p class="price">Pro <strong>$101.95</strong></p>
+      <p class="price">Enterprise <strong>$254.95</strong></p>
+      <a href="bundle-6.html" class="btn">View</a>
     </div>
     <div class="plan">
-        <h2>12 Months - 20% Off</h2>
-        <p class="price">$86.30 total</p>
-        <a href="bundle-12.html" class="btn">Choose</a>
+      <h2>12 Months <span class="badge">-20%</span></h2>
+      <p class="price">Beginner <strong>$86.30</strong></p>
+      <p class="price">Pro <strong>$191.90</strong></p>
+      <p class="price">Enterprise <strong>$479.90</strong></p>
+      <a href="bundle-12.html" class="btn">View</a>
     </div>
+  </div>
 </section>
 
 <footer>
-    <p>© 2025 OpsByte AI. All Rights Reserved.</p>
+  <div class="footer-links">
+    <a href="about.html">About Us</a>
+    <a href="faq.html">FAQ</a>
+    <a href="pricing.html">Plans</a>
+    <a href="bundles.html">Bundles</a>
+  </div>
+  <p>© 2025 OpsByte AI. All Rights Reserved.</p>
 </footer>
+
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <h3>Please sign in</h3>
+    <p>You need to log in before continuing to checkout.</p>
+    <div class="modal-actions">
+      <a href="login.html" class="btn small">Login</a>
+      <a href="signup.html" class="btn small">Sign Up</a>
+      <button class="btn-ghost small" data-close-modal>Close</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>

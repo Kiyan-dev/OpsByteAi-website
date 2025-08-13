@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - OpsByte AI</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - OpsByte AI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
 </head>
 <body>
 <header>
-    <div class="logo">OpsByte AI</div>
-    <nav class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html">Plans</a>
-        <a href="bundles.html">Bundles</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About Us</a>
-        <a href="login.html" class="btn active">Login</a>
-        <a href="signup.html" class="btn">Sign Up</a>
-    </nav>
-    <div class="burger" id="burger">&#9776;</div>
+  <div class="logo">OpsByte AI</div>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Plans</a>
+    <a href="bundles.html">Bundles</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
 </header>
+<aside id="drawer" class="drawer">
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="pricing.html">Plans</a>
+  <a href="bundles.html">Bundles</a>
+</aside>
+<div id="overlay" class="overlay"></div>
 
-<section class="auth-form">
-    <h1>Login</h1>
-    <form>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit" class="btn">Login</button>
-        <button type="button" class="btn google-login">Sign in with Google</button>
-    </form>
+<section class="content form-section">
+  <h1>Login</h1>
+  <form id="loginForm">
+    <input id="loginEmail" type="email" placeholder="Email" required/>
+    <input id="loginPassword" type="password" placeholder="Password" required/>
+    <button type="submit" class="btn">Login</button>
+  </form>
+
+  <div class="or">or</div>
+
+  <button id="googleLogin" class="btn-outline">Continue with Google</button>
+
+  <p class="smalltext">Don’t have an account? <a href="signup.html">Sign Up</a></p>
 </section>
 
 <footer>
-    <p>© 2025 OpsByte AI. All Rights Reserved.</p>
+  <p>© 2025 OpsByte AI. All Rights Reserved.</p>
 </footer>
+
+<!-- Firebase App (required) & Auth (only on auth pages) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 </body>
 </html>

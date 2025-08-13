@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - OpsByte AI</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ - OpsByte AI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
 </head>
 <body>
 <header>
-    <div class="logo">OpsByte AI</div>
-    <nav class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html">Plans</a>
-        <a href="bundles.html">Bundles</a>
-        <a href="faq.html" class="active">FAQ</a>
-        <a href="about.html">About Us</a>
-        <a href="login.html" class="btn">Login</a>
-        <a href="signup.html" class="btn">Sign Up</a>
-    </nav>
-    <div class="burger" id="burger">&#9776;</div>
+  <div class="logo">OpsByte AI</div>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Plans</a>
+    <a href="bundles.html">Bundles</a>
+    <a href="faq.html" class="active">FAQ</a>
+    <a href="about.html">About Us</a>
+    <a href="login.html" class="btn small">Login</a>
+    <a href="signup.html" class="btn small">Sign Up</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
 </header>
+<aside id="drawer" class="drawer">
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="pricing.html">Plans</a>
+  <a href="bundles.html">Bundles</a>
+  <a href="faq.html" class="active">FAQ</a>
+  <a href="about.html">About Us</a>
+  <a href="login.html" class="btn small">Login</a>
+  <a href="signup.html" class="btn small">Sign Up</a>
+</aside>
+<div id="overlay" class="overlay"></div>
 
 <section class="content">
-    <h1>Frequently Asked Questions</h1>
-    <h3>What is OpsByte AI?</h3>
-    <p>OpsByte AI is a platform that provides AI-powered tools for businesses and individuals.</p>
-
-    <h3>How do I purchase a plan?</h3>
-    <p>Simply choose a plan or bundle, create an account, and follow the checkout process.</p>
+  <h1>Frequently Asked Questions</h1>
+  <div class="faq-item"><h3>How do I subscribe?</h3><p>Choose a plan or bundle and proceed to checkout (login required).</p></div>
+  <div class="faq-item"><h3>Can I cancel anytime?</h3><p>Yes. Cancel from your account or payment provider. Access continues until the paid period ends.</p></div>
+  <div class="faq-item"><h3>Do you offer a free trial?</h3><p>Yes. Bundles start with a 7-day free trial.</p></div>
+  <div class="faq-item"><h3>Which payments are accepted?</h3><p>Major cards, PayPal, and local methods (via your processor).</p></div>
+  <div class="faq-item"><h3>What happens when my subscription ends?</h3><p>Access deactivates automatically unless you renew.</p></div>
 </section>
 
 <footer>
-    <p>© 2025 OpsByte AI. All Rights Reserved.</p>
+  <div class="footer-links">
+    <a href="about.html">About Us</a>
+    <a href="faq.html">FAQ</a>
+    <a href="pricing.html">Plans</a>
+    <a href="bundles.html">Bundles</a>
+  </div>
+  <p>© 2025 OpsByte AI. All Rights Reserved.</p>
 </footer>
+
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <h3>Please sign in</h3>
+    <p>You need to log in before continuing to checkout.</p>
+    <div class="modal-actions">
+      <a href="login.html" class="btn small">Login</a>
+      <a href="signup.html" class="btn small">Sign Up</a>
+      <button class="btn-ghost small" data-close-modal>Close</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>

@@ -1,41 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plans - OpsByte AI</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plans - OpsByte AI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
 </head>
 <body>
 <header>
-    <div class="logo">OpsByte AI</div>
-    <nav class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html" class="active">Plans</a>
-        <a href="bundles.html">Bundles</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About Us</a>
-        <a href="login.html" class="btn">Login</a>
-        <a href="signup.html" class="btn">Sign Up</a>
-    </nav>
-    <div class="burger" id="burger">&#9776;</div>
+  <div class="logo">OpsByte AI</div>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html" class="active">Plans</a>
+    <a href="bundles.html">Bundles</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About Us</a>
+    <a href="login.html" class="btn small">Login</a>
+    <a href="signup.html" class="btn small">Sign Up</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
 </header>
+<aside id="drawer" class="drawer">
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="pricing.html" class="active">Plans</a>
+  <a href="bundles.html">Bundles</a>
+  <a href="faq.html">FAQ</a>
+  <a href="about.html">About Us</a>
+  <a href="login.html" class="btn small">Login</a>
+  <a href="signup.html" class="btn small">Sign Up</a>
+</aside>
+<div id="overlay" class="overlay"></div>
 
-<section class="pricing">
-    <h1>Choose Your Plan</h1>
+<section class="content">
+  <h1>Choose Your Plan</h1>
+  <div class="pricing-container">
     <div class="plan">
-        <h2>Beginner</h2>
-        <p class="price">$8.99/month</p>
-        <p>3 Months - $24.27</p>
-        <p>6 Months - $45.84</p>
-        <p>12 Months - $86.30</p>
+      <h2>Beginner</h2>
+      <p class="price">$8.99 / month</p>
+      <ul>
+        <li>5 connected apps</li>
+        <li>1 messaging channel</li>
+        <li>1 AI agent</li>
+        <li>Standard speed</li>
+        <li>Email support</li>
+        <li>Basic logs</li>
+      </ul>
+      <p class="deal">3 months -10% • 6 months -15% • 12 months -20%</p>
+      <button class="btn requires-auth" data-plan="beginner-monthly">Select</button>
     </div>
+
+    <div class="plan">
+      <h2>Pro</h2>
+      <p class="price">$19.99 / month</p>
+      <ul>
+        <li>15 connected apps</li>
+        <li>3 messaging channels</li>
+        <li>3 AI agents</li>
+        <li>Faster processing</li>
+        <li>Priority email support</li>
+        <li>Advanced logs</li>
+      </ul>
+      <p class="deal">3 months -10% • 6 months -15% • 12 months -20%</p>
+      <button class="btn requires-auth" data-plan="pro-monthly">Select</button>
+    </div>
+
+    <div class="plan">
+      <h2>Enterprise</h2>
+      <p class="price">$49.99 / month</p>
+      <ul>
+        <li>Unlimited apps</li>
+        <li>Unlimited channels</li>
+        <li>Unlimited AI agents</li>
+        <li>API & custom integrations</li>
+        <li>24/7 support</li>
+        <li>Enterprise SLA</li>
+      </ul>
+      <p class="deal">3 months -10% • 6 months -15% • 12 months -20%</p>
+      <button class="btn requires-auth" data-plan="enterprise-monthly">Select</button>
+    </div>
+  </div>
+
+  <div class="bundle-cta">
+    <p>Want to save more? Check our discounted <a href="bundles.html">Bundles</a> (3, 6, or 12 months prepaid).</p>
+  </div>
 </section>
 
 <footer>
-    <p>© 2025 OpsByte AI. All Rights Reserved.</p>
+  <div class="footer-links">
+    <a href="about.html">About Us</a>
+    <a href="faq.html">FAQ</a>
+    <a href="pricing.html">Plans</a>
+    <a href="bundles.html">Bundles</a>
+  </div>
+  <p>© 2025 OpsByte AI. All Rights Reserved.</p>
 </footer>
+
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <h3>Please sign in</h3>
+    <p>You need to log in before continuing to checkout.</p>
+    <div class="modal-actions">
+      <a href="login.html" class="btn small">Login</a>
+      <a href="signup.html" class="btn small">Sign Up</a>
+      <button class="btn-ghost small" data-close-modal>Close</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>

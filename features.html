@@ -1,39 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features - OpsByte AI</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Features - OpsByte AI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
 </head>
 <body>
 <header>
-    <div class="logo">OpsByte AI</div>
-    <nav class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="features.html" class="active">Features</a>
-        <a href="pricing.html">Plans</a>
-        <a href="bundles.html">Bundles</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About Us</a>
-        <a href="login.html" class="btn">Login</a>
-        <a href="signup.html" class="btn">Sign Up</a>
-    </nav>
-    <div class="burger" id="burger">&#9776;</div>
+  <div class="logo">OpsByte AI</div>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="features.html" class="active">Features</a>
+    <a href="pricing.html">Plans</a>
+    <a href="bundles.html">Bundles</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About Us</a>
+    <a href="login.html" class="btn small">Login</a>
+    <a href="signup.html" class="btn small">Sign Up</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
 </header>
+<aside id="drawer" class="drawer">
+  <a href="index.html">Home</a>
+  <a href="features.html" class="active">Features</a>
+  <a href="pricing.html">Plans</a>
+  <a href="bundles.html">Bundles</a>
+  <a href="faq.html">FAQ</a>
+  <a href="about.html">About Us</a>
+  <a href="login.html" class="btn small">Login</a>
+  <a href="signup.html" class="btn small">Sign Up</a>
+</aside>
+<div id="overlay" class="overlay"></div>
 
 <section class="content">
-    <h1>Our Features</h1>
-    <ul>
-        <li>Fast AI processing</li>
-        <li>Secure cloud integration</li>
-        <li>Multi-platform support</li>
-    </ul>
+  <h1>Our Features</h1>
+  <ul class="feature-list">
+    <li><strong>Connect Any App:</strong> Integrations with 100+ tools.</li>
+    <li><strong>Smart Scheduling:</strong> Run tasks every minute, hour, day, or week.</li>
+    <li><strong>Multilingual Support:</strong> Uses your device language.</li>
+    <li><strong>Goal-Based Agents:</strong> Give a goal—get results.</li>
+    <li><strong>Team Access:</strong> Invite teammates and share bots.</li>
+    <li><strong>Detailed Logs:</strong> Success/Fail with reasons and fixes.</li>
+  </ul>
 </section>
 
 <footer>
-    <p>© 2025 OpsByte AI. All Rights Reserved.</p>
+  <div class="footer-links">
+    <a href="about.html">About Us</a>
+    <a href="faq.html">FAQ</a>
+    <a href="pricing.html">Plans</a>
+    <a href="bundles.html">Bundles</a>
+  </div>
+  <p>© 2025 OpsByte AI. All Rights Reserved.</p>
 </footer>
+
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <h3>Please sign in</h3>
+    <p>You need to log in before continuing to checkout.</p>
+    <div class="modal-actions">
+      <a href="login.html" class="btn small">Login</a>
+      <a href="signup.html" class="btn small">Sign Up</a>
+      <button class="btn-ghost small" data-close-modal>Close</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
